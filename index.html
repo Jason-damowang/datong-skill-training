@@ -108,12 +108,12 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--navy-
 .card .tag{display:inline-block;align-self:flex-start;margin-top:4px;font-family:var(--mono);font-size:17px;letter-spacing:1px;padding:5px 12px;border-radius:20px;background:var(--gold-soft);color:var(--gold);}
 
 .steps{display:flex;flex-direction:column;width:100%;}
-.step{display:flex;gap:22px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line);}
+.step{display:flex;gap:22px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line);}
 .step:last-child{border-bottom:none;}
 .step .n{flex:0 0 auto;width:56px;height:56px;border-radius:50%;background:var(--gold);color:#1a0d05;font-family:var(--font-display);font-weight:900;font-size:28px;display:flex;align-items:center;justify-content:center;}
-.step .body2{flex:1;}
-.step h3{font-family:var(--font-display);font-weight:900;font-size:32px;color:var(--ink);}
-.step .meta{font-family:var(--font-body);font-size:21px;color:var(--muted);line-height:1.5;margin-top:8px;}
+.step .body2{flex:1;display:flex;align-items:baseline;gap:20px;min-width:0;}
+.step h3{font-family:var(--font-display);font-weight:900;font-size:32px;color:var(--ink);white-space:nowrap;flex:0 0 auto;}
+.step .meta{font-family:var(--font-body);font-size:21px;color:var(--muted);line-height:1.5;margin-top:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .step .meta .ok{color:#7fd1a6;}
 .step .meta .bad{color:var(--signal-red);}
 
@@ -643,9 +643,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--navy-
       </div>
       <div class="body">
         <div class="cols cols-3 reveal" data-page-node-id="NHfS84oeX7yGLG69kXkEGH">
-          <div class="card" style="background:var(--gold-soft);border-color:rgba(232,184,75,.35);" data-page-node-id="eKIlXSLNMXbOWHwEmDAV9R"><div class="num" data-page-node-id="sofcnuI9WV0Jn0rOJcBBDi">✓</div><h3 style="color:var(--gold);" data-page-node-id="DGrOCz6BAlV3BmirnFDLzI">适合建</h3><p data-page-node-id="kX7336DG6dTYx0E8HrC8OR">高频重复、有清晰 SOP、输入输出明确、可标准化</p></div>
-          <div class="card" style="background:var(--red-soft);border-color:rgba(232,69,60,.32);" data-page-node-id="mkNAeGXCXKEyAF5lZapOZj"><div class="num" data-page-node-id="MJXsoSJ5ucgMoOEouUVOuM">✕</div><h3 style="color:var(--signal-red);" data-page-node-id="4bkm7YnZp1HvwkyOD0AFYT">别建</h3><p data-page-node-id="lOlSvwyVJtKfIjK7ON7Cgg">一次性需求、无规律、依赖主观判断或合规拍板</p></div>
-          <div class="card" data-page-node-id="7LPjmIWhVvXmWnU2aeifdi"><div class="num" data-page-node-id="bGsiALXkhH0sJifOFDcTGW">!</div><h3 data-page-node-id="kYAmCYMtG9rs1d7Ucyg872">别贪多</h3><p data-page-node-id="vXPbKFX375O8QzpAY7JQRo">Skill 是渐进式加载，像一张桌子装 10 个半成品反而没地方；盯准最高频的几个场景</p></div>
+          <div class="card" style="background:var(--gold-soft);border-color:rgba(232,184,75,.35);" data-page-node-id="eKIlXSLNMXbOWHwEmDAV9R"><div class="num" data-page-node-id="sofcnuI9WV0Jn0rOJcBBDi">✓</div><h3 style="color:var(--gold);" data-page-node-id="DGrOCz6BAlV3BmirnFDLzI">适合建</h3><p data-page-node-id="kX7336DG6dTYx0E8HrC8OR">高频重复、有清晰 SOP、输入输出明确</p></div>
+          <div class="card" style="background:var(--red-soft);border-color:rgba(232,69,60,.32);" data-page-node-id="mkNAeGXCXKEyAF5lZapOZj"><div class="num" data-page-node-id="MJXsoSJ5ucgMoOEouUVOuM">✕</div><h3 style="color:var(--signal-red);" data-page-node-id="4bkm7YnZp1HvwkyOD0AFYT">别建</h3><p data-page-node-id="lOlSvwyVJtKfIjK7ON7Cgg">一次性需求、无规律、靠主观判断或合规拍板</p></div>
+          <div class="card" data-page-node-id="7LPjmIWhVvXmWnU2aeifdi"><div class="num" data-page-node-id="bGsiALXkhH0sJifOFDcTGW">!</div><h3 data-page-node-id="kYAmCYMtG9rs1d7Ucyg872">别贪多</h3><p data-page-node-id="vXPbKFX375O8QzpAY7JQRo">渐进式加载，10 个半成品不如精做 2-3 个</p></div>
         </div>
         <div class="statement reveal" style="margin-top:10px;">
           <div class="big" style="font-size:34px;line-height:1.55;">大同证券场景对号入座：<em>适合建</em>=Excel 数据清洗、周报月报汇总、研报要点提炼（高频、有 SOP）｜<em>别建</em>=一次性专项分析、某客户定制尽调（无规律、靠主观判断）｜先盯 2-3 个最高频场景，做深做稳。</div>
