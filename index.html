@@ -67,7 +67,7 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--navy-
    弹性流式内容容器：标题区在上、主体区垂直居中填充
    稀疏页与密集页都自然平衡，不再写死 top 导致忽紧忽松
    ============================================================ */
-.content{position:absolute;top:150px;bottom:80px;left:var(--pad);right:var(--pad);display:flex;flex-direction:column;justify-content:center;gap:44px;z-index:2;min-height:0;}
+.content{position:absolute;top:118px;bottom:64px;left:var(--pad);right:var(--pad);display:flex;flex-direction:column;justify-content:center;gap:44px;z-index:2;min-height:0;}
 .content.center{justify-content:center;}
 .head{display:flex;flex-direction:column;gap:16px;flex:0 0 auto;}
 .body{flex:0 1 auto;display:flex;flex-direction:column;gap:40px;min-height:0;}
@@ -102,18 +102,18 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--navy-
 .cols-3{grid-template-columns:repeat(3,1fr);}
 .cols-2{grid-template-columns:repeat(2,1fr);}
 .card{background:var(--card);border:1px solid var(--card-bd);border-radius:16px;padding:42px 40px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:22px;}
-.card .num{font-family:var(--mono);font-weight:700;font-size:24px;color:var(--gold);}
-.card h3{font-family:var(--font-display);font-weight:900;font-size:34px;color:var(--ink);line-height:1.2;}
-.card p{font-family:var(--font-body);font-weight:400;font-size:22px;line-height:2.0;color:var(--muted);}
+.card .num{font-family:var(--mono);font-weight:700;font-size:26px;color:var(--gold);}
+.card h3{font-family:var(--font-display);font-weight:900;font-size:37px;color:var(--ink);line-height:1.2;}
+.card p{font-family:var(--font-body);font-weight:400;font-size:24px;line-height:2.0;color:var(--muted);}
 .card .tag{display:inline-block;align-self:flex-start;margin-top:4px;font-family:var(--mono);font-size:17px;letter-spacing:1px;padding:5px 12px;border-radius:20px;background:var(--gold-soft);color:var(--gold);}
 
 .steps{display:flex;flex-direction:column;width:100%;}
 .step{display:flex;gap:22px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line);}
 .step:last-child{border-bottom:none;}
-.step .n{flex:0 0 auto;width:56px;height:56px;border-radius:50%;background:var(--gold);color:#1a0d05;font-family:var(--font-display);font-weight:900;font-size:28px;display:flex;align-items:center;justify-content:center;}
+.step .n{flex:0 0 auto;width:60px;height:60px;border-radius:50%;background:var(--gold);color:#1a0d05;font-family:var(--font-display);font-weight:900;font-size:30px;display:flex;align-items:center;justify-content:center;}
 .step .body2{flex:1;display:flex;align-items:baseline;gap:20px;min-width:0;}
-.step h3{font-family:var(--font-display);font-weight:900;font-size:32px;color:var(--ink);white-space:nowrap;flex:0 0 auto;}
-.step .meta{font-family:var(--font-body);font-size:21px;color:var(--muted);line-height:1.5;margin-top:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.step h3{font-family:var(--font-display);font-weight:900;font-size:35px;color:var(--ink);white-space:nowrap;flex:0 0 auto;}
+.step .meta{font-family:var(--font-body);font-size:23px;color:var(--muted);line-height:1.5;margin-top:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .step .meta .ok{color:#7fd1a6;}
 .step .meta .bad{color:var(--signal-red);}
 
@@ -132,11 +132,11 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--navy-
 .vs .col{border-radius:16px;padding:38px 40px;overflow:hidden;display:flex;flex-direction:column;gap:20px;}
 .vs .bad{background:var(--red-soft);border:1px solid rgba(232,69,60,.32);}
 .vs .good{background:var(--gold-soft);border:1px solid rgba(232,184,75,.32);}
-.vs .col h3{font-family:var(--font-display);font-weight:900;font-size:34px;}
+.vs .col h3{font-family:var(--font-display);font-weight:900;font-size:37px;}
 .vs .bad h3{color:var(--signal-red);}
 .vs .good h3{color:var(--gold);}
 .vs .col ul{list-style:none;}
-.vs .col li{font-family:var(--font-body);font-size:22px;line-height:1.55;color:var(--ink);padding:12px 0 12px 30px;position:relative;border-bottom:1px solid rgba(255,255,255,.07);}
+.vs .col li{font-family:var(--font-body);font-size:24px;line-height:1.55;color:var(--ink);padding:12px 0 12px 30px;position:relative;border-bottom:1px solid rgba(255,255,255,.07);}
 .vs .col li:last-child{border-bottom:none;}
 .vs .bad li::before{content:"✕";position:absolute;left:0;color:var(--signal-red);}
 .vs .good li::before{content:"✓";position:absolute;left:0;color:var(--gold);}
@@ -144,9 +144,9 @@ html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--navy-
 /* FAQ 问答 */
 .qa{display:flex;flex-direction:column;gap:28px;width:100%;}
 .qa .item{background:var(--card);border:1px solid var(--card-bd);border-radius:16px;padding:34px 42px;}
-.qa .q{font-family:var(--font-display);font-weight:900;font-size:30px;color:var(--gold);}
-.qa .a{font-family:var(--font-body);font-size:24px;line-height:1.6;color:var(--ink);margin-top:14px;}
-.qa .a .sub{color:var(--muted);font-size:21px;}
+.qa .q{font-family:var(--font-display);font-weight:900;font-size:32px;color:var(--gold);}
+.qa .a{font-family:var(--font-body);font-size:26px;line-height:1.6;color:var(--ink);margin-top:14px;}
+.qa .a .sub{color:var(--muted);font-size:22px;}
 
 /* 金句 / 收尾语（流式，左侧金线强调） */
 .statement{width:100%;border-left:5px solid var(--gold);padding:14px 0 14px 34px;}
